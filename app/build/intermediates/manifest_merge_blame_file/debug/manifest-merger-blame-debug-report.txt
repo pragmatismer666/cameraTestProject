@@ -1,0 +1,122 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="krunal.com.example.cameraapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:5:5-6:35
+12        android:name="android.hardware.camera"
+12-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:5:19-57
+13        android:required="true" />
+13-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:6:9-32
+14
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:8:5-81
+15-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:8:22-78
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:9:5-65
+16-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:9:22-62
+17
+18    <queries>
+18-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:11:5-27:15
+19
+20        <!-- Browser -->
+21        <intent>
+21-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:13:9-16:18
+22            <action android:name="android.intent.action.VIEW" />
+22-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:14:13-65
+22-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:14:21-62
+23
+24            <data android:scheme="http" />
+24-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:15:13-43
+24-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:15:19-40
+25        </intent>
+26
+27        <!-- Camera -->
+28        <intent>
+28-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:19:9-21:18
+29            <action android:name="android.media.action.IMAGE_CAPTURE" />
+29-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:20:13-73
+29-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:20:21-70
+30        </intent>
+31
+32        <!-- Gallery -->
+33        <intent>
+33-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:24:9-26:18
+34            <action android:name="android.intent.action.GET_CONTENT" />
+34-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:25:13-72
+34-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:25:21-69
+35        </intent>
+36    </queries>
+37
+38    <application
+38-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:29:5-61:19
+39        android:allowBackup="true"
+39-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:30:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.0.0] C:\Users\result\.gradle\caches\transforms-2\files-2.1\2b7c43aab63a19fe7e7008cae3e47596\core-1.0.0\AndroidManifest.xml:22:18-86
+41        android:debuggable="true"
+42        android:extractNativeLibs="false"
+43        android:icon="@mipmap/ic_launcher"
+43-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:31:9-43
+44        android:label="@string/app_name"
+44-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:32:9-41
+45        android:roundIcon="@mipmap/ic_launcher_round"
+45-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:33:9-54
+46        android:supportsRtl="true"
+46-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:34:9-35
+47        android:testOnly="true"
+48        android:theme="@style/AppTheme" >
+48-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:35:9-40
+49        <activity
+49-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:38:9-40:58
+50            android:name="krunal.com.example.cameraapp.ReviewActivity"
+50-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:39:13-43
+51            android:parentActivityName="krunal.com.example.cameraapp.MainActivity" />
+51-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:40:13-55
+52
+53        <provider
+53-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:42:9-50:20
+54            android:name="androidx.core.content.FileProvider"
+54-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:43:13-62
+55            android:authorities="com.example.android.fileprovider"
+55-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:44:13-67
+56            android:exported="false"
+56-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:45:13-37
+57            android:grantUriPermissions="true" >
+57-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:46:13-47
+58            <meta-data
+58-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:47:13-49:55
+59                android:name="android.support.FILE_PROVIDER_PATHS"
+59-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:48:17-67
+60                android:resource="@xml/file_parths" />
+60-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:49:17-52
+61        </provider>
+62
+63        <activity
+63-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:52:9-60:20
+64            android:name="krunal.com.example.cameraapp.MainActivity"
+64-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:53:13-41
+65            android:screenOrientation="portrait" >
+65-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:54:13-49
+66            <intent-filter>
+66-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:55:13-59:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:56:17-69
+67-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:56:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:58:17-77
+69-->F:\android\testProj\simpleCamera\app\src\main\AndroidManifest.xml:58:27-74
+70            </intent-filter>
+71        </activity>
+72    </application>
+73
+74</manifest>
